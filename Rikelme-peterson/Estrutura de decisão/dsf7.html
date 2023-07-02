@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expo7</title>
+</head>
+
+<body>
+    <div id="it1"></div>
+
+    <script>
+        let peso = Number(prompt("Digite aqui seu peso:"))
+        let alt = Number(prompt("Digite aqui sua altuea"))
+
+        let imc = peso / (alt* alt);
+        if (imc < 18.5) {
+            document.getElementById('it1').innerHTML = `com IMC:${imc} você está em baixo peso.`
+        } else if (imc >= 18.5 && imc < 25) {
+            document.getElementById('it1').innerHTML= `com IMC:${imc} você está no peso normal.`
+        } else if (imc >= 25 && imc < 30) {
+            document.getElementById('it1').innerHTML = `com IMC:${imc} você está em excesso de peso.`
+        } else if (imc >= 30 && imc < 35) {
+            document.getElementById('it1').innerHTML = `com IMC:${imc} você está na obesidade.`
+        } else if (imc >= 35) {
+            document.getElementById('it1').innerHTML = `com IMC:${imc} você está na obesidade extrema`
+        }
+    </script>
+</body>
+
+</html>

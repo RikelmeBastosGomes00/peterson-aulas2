@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp04</title>
+</head>
+<body>
+    <div id="it1"></div>
+
+    <script>
+      let idade = Number(prompt("Digite aqui sua idade:"))
+      let ver = prompt("você tem título (s)im ou (n)ão:")
+
+      if(idade >=16 && ver =="sim"){
+        document.getElementById("it1").innerHTML = `Você pode votar`
+      }
+      else
+      {
+        document.getElementById("it1").innerHTML = `Não pode votar`
+      }
+    </script>
+</body>
+</html>

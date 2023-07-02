@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão10</title>
+</head>
+<body>
+    <div id="it1"></div>
+
+    <script>
+     let anonasc = window.prompt("Em que ano você nasceu?")
+     let solt = window.prompt("Você é solteiro?")
+     let res = 2023 - anonasc
+     document.getElementById("it1").innerHTML = ` você tem mais que 18 anos ? ${res > 18} <br> Você é solteiro? ${solt == "Sim" || solt == "sim"} `
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer01</title>
+</head>
+<body>
+    <div id="it1"></div>
+
+    <script>
+    let it1 = document.getElementById("it1")
+
+    let salFix = Number(prompt("Digite aqui seu sálario fixo:"))
+    let valVend = Number(prompt("Digite aqui o quanto você fez em venda"))
+    let com = (valVend * 4)/100
+    let salFin = com + salFix
+    document.write(` O valor de sua comissão é : ${com} <br>O valor de seu sálario final é de : ${salFin}`)
+
+
+
+    </script>
+</body>
+</html>

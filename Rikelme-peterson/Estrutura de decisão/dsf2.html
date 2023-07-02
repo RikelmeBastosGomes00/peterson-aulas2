@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp2</title>
+</head>
+<body>
+   <div id="it1">
+
+   </div> 
+   <script>
+    let num1 = Number(prompt("Digite aqui seu primeiro número:"))
+    let num2 = Number(prompt("Digite aqui seu segundo número:"))
+    let mult = num1 % num2
+
+    if(mult == 0){
+        document.getElementById("it1").innerHTML = `O primeiro é múltiplo do segundo.` 
+    }
+    else {
+        document.getElementById("it1").innerHTML = `O primeiro não é múltiplo do segundo.`   
+    }
+
+</script>
+</body>
+</html>

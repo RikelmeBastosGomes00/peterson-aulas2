@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsf1</title>
+</head>
+<body>
+    <div id="it1"></div>
+    <div id="it2"></div>
+
+    <script>
+        let idade1 = parseInt(prompt("Digite aqui sua 1ª idade:"));
+    let idade2 = parseInt(prompt("Digite aqui sua 2ª idade:"));
+    let idade3 = parseInt(prompt("Digite aqui sua 3ª idade:"));
+    let idade4 = parseInt(prompt("Digite aqui sua 4ª idade:"));
+    let idade5 = parseInt(prompt("Digite aqui sua 5ª idade:"));
+
+    let maior = 0;
+    let menor = 0;
+
+    if (idade1 > idade2 && idade1 > idade3 && idade1 > idade4 && idade1 > idade5) {
+      maior = idade1
+    } else if (idade2 > idade1 && idade2 > idade3 && idade2 > idade4 && idade2 > idade5) {
+      maior = idade2
+    } else if (idade3 > idade2 && idade3 > idade1 && idade3 > idade4 && idade3 > idade5) {
+      maior = idade3
+    } else if (idade4 > idade2 && idade4 > idade3 && idade4 > idade1 && idade4 > idade5) {
+      maior = idade4
+    } else if (idade5 > idade2 && idade5 > idade3 && idade5 > idade4 && idade5 > idade1) {
+      maior = idade5
+    }
+
+    if (idade1 < idade2 && idade1 < idade3 && idade1 < idade4 && idade1 < idade5) {
+      menor = idade1;
+    } else if (idade2 < idade1 && idade2 < idade3 && idade2 < idade4 && idade2 < idade5) {
+      menor = idade2;
+    } else if (idade3 < idade2 && idade3 < idade1 && idade3 < idade4 && idade3 < idade5) {
+      menor = idade3;
+    } else if (idade4 < idade2 && idade4 < idade3 && idade4 < idade1 && idade4 < idade5) {
+      menor = idade4;
+    } else if (idade5 < idade2 && idade5 < idade3 && idade5 < idade4 && idade5 < idade1) {
+      menor = idade5
+    }
+
+    document.getElementById("it1").innerHTML = `Maior idade é ${maior}`
+    document.getElementById("it2").innerHTML = `Menor idade é ${menor}`
+    </script>
+</body>
+</html>

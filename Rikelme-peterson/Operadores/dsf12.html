@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão12</title>
+</head>
+<body>
+    <div id="it1"></div>
+
+    <script>
+        
+        let rad = parseFloat(prompt("Informe o valor do angulo em radianos: "))
+        let catAd = parseFloat(prompt("Informe o valor do cateto adjacente: "))
+
+        let hipo = catAd/Math.cos(rad)
+
+        document.getElementById("it1").innerHTML=`Informe o valor do angulo em radianos: ${rad}<br>Informe o valor do cateto adjacente: ${catAd}<br>O valor da hipotenusa é: ${hipo}`
+    
+    </script>
+</body>
+</html>

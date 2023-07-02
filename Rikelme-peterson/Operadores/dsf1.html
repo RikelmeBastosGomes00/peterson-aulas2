@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão 1</title>
+</head>
+<body>
+    <div id="itens">
+
+    </div>
+    <script>
+     let mm = Number(prompt("Digite o valor em milímetros:"))
+     let cm = mm/10 
+     let dm = cm/10
+     let m = dm/10
+     let dam = m/10
+     let hm = dam/10
+     let km = hm/10
+    document.getElementById("itens").innerHTML=`${mm}mm valem ${cm}cm <br>${cm}cm valem ${dm}dm <br>${dm}dm valem ${m}m <br> ${m}m valem ${dam}dam <br>${dam}dam valem ${hm}hm <br> ${hm}hm valem ${km}km`
+    
+    </script>
+</body>
+</html>

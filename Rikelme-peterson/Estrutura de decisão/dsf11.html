@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsf2</title>
+</head>
+
+<body>
+    <div id="it1"></div>
+    <script>
+        let it1 = document.getElementById("it1")
+        let vlr1 = Number(prompt("Digite aqui o primeiro valor:"))
+        let vlr2 = Number(prompt("Digite aqui o segundo valor:"))
+        let vlr3 = Number(prompt("Digite aqui o terceiro valor:"))
+
+
+
+        if(vlr1 > vlr2 && vlr1 > vlr3 && vlr2 > vlr3){
+         document.getElementById("it1").innerHTML = `${vlr1},${vlr2},${vlr3}`   
+        }
+        if(vlr1 > vlr2 && vlr1 > vlr3 && vlr3 > vlr2){
+         document.getElementById("it1").innerHTML = `${vlr1},${vlr3},${vlr2}`   
+        }
+        if(vlr2 > vlr1 && vlr2 > vlr3 && vlr3 > vlr1){
+         document.getElementById("it1").innerHTML = `${vlr2},${vlr3},${vlr1}`   
+        }
+       if(vlr2 > vlr1 && vlr2>3 && vlr1 > vlr3){
+        document.getElementById("it1").innerHTML=`${vlr2},${vlr1},${vlr3}`
+       }
+       if(vlr3 > vlr2 && vlr3 > vlr1 && vlr2 > vlr1){
+         document.getElementById("it1").innerHTML = `${vlr3},${vlr2},${vlr1}`   
+        }
+        if(vlr3 > vlr2 && vlr3 > vlr1 && vlr1 > vlr2){
+         document.getElementById("it1").innerHTML = `${vlr3},${vlr1},${vlr2}`   
+        }
+
+
+    </script>
+</body>
+
+</html>

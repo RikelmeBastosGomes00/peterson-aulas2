@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer03</title>
+</head>
+
+<body>
+    <div id="it1"></div>
+    
+    <script>
+          
+
+        let ponto = Number(0)
+        let it1 = document.getElementById("it1")
+
+
+        let esco = prompt("Escolha cara ou coroa ou sair para sair do jogo:")
+        if (esco === "sair") {
+            it1.innerHTML = "Você saiu do jogo"
+        }
+        else {
+            if (esco !== "cara" && esco !== "coroa") {
+                it1.innerHTML = "Tente novamente. escolha entre cara ou coroa ou sair";
+
+            }
+            var numeroAleatorio = Math.floor(Math.random() * 2); // Gera um número aleatório entre 0 e 1
+
+            if (numeroAleatorio === 0) {
+                it1.innerHTML = "Caiu cara!";
+            } else {
+                it1.innerHTML = "Caiu coroa!";
+            }
+
+            if (esco == "cara" && numeroAleatorio == 0) {
+                it1.innerHTML += " Parabéns, você ganhou!";
+                 ponto = ponto + 1 
+                 it1.innerHTML += `${ponto}`
+           
+
+
+            } else if (esco == "coroa" && numeroAleatorio == 1) {
+                it1.innerHTML += " Parabéns, você ganhou!";
+                ponto = ponto + 1 
+                it1.innerHTML += `${ponto}`
+
+               
+            } else {
+                it1.innerHTML += " Você perdeu!";
+                ponto = ponto - 1 
+                it1.innerHTML += `${ponto}`
+
+
+            }
+        }
+             pont.innerHTML = contadpr
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp03</title>
+</head>
+
+<body>
+    <div id="it1"></div>
+    <script>
+
+        let a = parseFloat(prompt("Informe o valor de a: "))
+        let b = parseFloat(prompt("Informe o valor de b: "))
+        let c = parseFloat(prompt("Informe o valor de c: "))
+
+        delta = b ** 2 - (4 * a * c)
+        if (delta >= 0) {
+            bhaP = ((b * -1) + Math.sqrt(delta)) / 2 * a
+            bhaN = ((b * -1) - Math.sqrt(delta)) / 2 * a
+
+            document.getElementById("it1").innerHTML = `Informe o valor de a: ${a}<br>Informe o valor de b: ${b}<br>Informe o valor de c: ${c}<br>X1: ${bhaP}  X2: ${bhaN}`
+
+        }
+        else{
+            document.getElementById("it1").innerHTML = `Delta menor que 0,Portanto as raizes não são reais`
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp1</title>
+</head>
+<body>
+   <div id="it1">
+
+   </div> 
+   <script>
+    let nt1 = Number(prompt("Digite aqui sua 1º nota:"))
+    let nt2 = Number(prompt("Digite aqui sua 2º nota:"))
+    let nt3 = Number(prompt("Digite aqui sua 3º nota:"))
+    let nt4 = Number(prompt("Digite aqui sua 4º nota:"))
+    let media = (nt1 + nt2 + nt2 + nt3 + nt4)/4
+
+    if(media >= 7){
+        document.getElementById("it1").innerHTML = `Parabéns! você foi aprovado. <br> É sua média: ${media}` 
+    }
+    else {
+        document.getElementById("it1").innerHTML = `Ainda não foi dessa vez <br> É sua média: ${media}`   
+    }
+
+</script>
+</body>
+</html>
